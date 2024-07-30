@@ -69,6 +69,28 @@
     <h1>Real-Time Rendering of ZipNeRF Model</h1>
     <p>This website showcases the real-time rendering of a ZipNeRF model trained on imagery captured from my living room. Achieving real-time performance was possible through teacher distillation and baking techniques, similar to SMERF. The images were taken using a standard iPhone camera.</p>
 
+    <h2>Please choose among the following quality presets for visualization:</h2>
+    <div class="container">
+        <div class="option">
+            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&vfovy=70&exposure=0.016&near=0.02&quality=phone&mouseMode=map&submodelCacheSize=0">
+                <span class="icon">&#128241;</span>
+                <span>iPhone</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&converted_perspective_room&mouseMode=fps&vfovy=70&exposure=0.016&near=0.02&quality=medium&mouseMode=fps">
+                <span class="icon">&#128187;</span>
+                <span>Laptop with weak GPU</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&converted_perspective_room&mouseMode=fps&vfovy=70&exposure=0.016&near=0.02&quality=high&mouseMode=fps">
+                <span class="icon">&#128187;</span>
+                <span>Laptop with strong GPU</span>
+            </a>
+        </div>
+    </div>
+
     <h2>Tips for Producing Good Imagery with an iPhone Camera</h2>
     <ul>
         <li>Use fisheye mode or wide-angle mode. The iPhone's automatic undistortion setting removes radial distortion, making it suitable for perspective imagery.</li>
@@ -90,27 +112,5 @@
 
     <h2>Model Training Details</h2>
     <p>The teacher model was trained to full convergence, while the student model was not fully converged. For mesh extraction from the trained teacher model, visit the following repository: <a href="https://github.com/SuLvXiangXin/zipnerf-pytorch">zipnerf-pytorch</a>.</p>
-
-    <h2>Please choose among the following quality presets:</h2>
-    <div class="container">
-        <div class="option">
-            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&vfovy=70&exposure=0.016&near=0.02&quality=phone&mouseMode=map&submodelCacheSize=0 ">
-                <span class="icon">&#128241;</span>
-                <span>iPhone</span>
-            </a>
-        </div>
-        <div class="option">
-            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&converted_perspective_room&mouseMode=fps&vfovy=70&exposure=0.016&near=0.02&quality=medium&mouseMode=fps">
-                <span class="icon">&#128187;</span>
-                <span>Laptop with weak GPU</span>
-            </a>
-        </div>
-        <div class="option">
-            <a href="https://p01onk7kh5l6ye-8003.proxy.runpod.net/?useDistanceGrid=true&useBits=true&dir=converted_perspective_room/sm_000&converted_perspective_room&mouseMode=fps&vfovy=70&exposure=0.016&near=0.02&quality=high&mouseMode=fps">
-                <span class="icon">&#128187;</span>
-                <span>Laptop with strong GPU</span>
-            </a>
-        </div>
-    </div>
 </body>
 </html>
