@@ -3,14 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Servers</title>
+    <title>Quality Presets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .option {
+            text-align: center;
+        }
+        .option .icon {
+            font-size: 64px;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .option a {
+            display: block;
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .option a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Web Servers</h1>
-    <ul>
-        <li><a href="http://yourserver1.com">Server 1</a></li>
-        <li><a href="http://yourserver2.com">Server 2</a></li>
-        <li><a href="http://yourserver3.com">Server 3</a></li>
-    </ul>
+    <h1>Please choose among the following quality presets.</h1>
+    <div class="container">
+        <div class="option">
+            <a href="http://yourserver1.com">
+                <span class="icon">&#128241;</span>
+                <span>Smartphone</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="http://yourserver2.com">
+                <span class="icon">&#128187;</span>
+                <span>Laptop with weak GPU</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
