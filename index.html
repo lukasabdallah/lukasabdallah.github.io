@@ -101,7 +101,7 @@
     <p>In my example, I recorded a video using the above settings, scanned each frame for the least blur, and selected frames on average every 0.5 seconds.</p>
 
     <h2>Image Processing to Obtain Poses</h2>
-    <p><strong>Note:</strong> Using a GPU for these steps is highly recommended.</p>
+    <p><strong>Note:</strong> Using a GPU for these steps is highly recommended. If you took wide-angle images with an iPhone, distortion is already removed, so specify 'OPEN_CV' as perspective camera mode</p>
     <blockquote>
         <code>colmap feature_extractor</code><br>
         <code>colmap exhaustive_matcher</code><br>
